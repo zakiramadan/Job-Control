@@ -12,6 +12,12 @@ Edit file `/etc/profile` dan tambahkan pesan:
 echo "Profile dari /etc/profile"
 ```
 
+![App Screenshot](/Images/1.png)
+
+![App Screenshot](/Images/2.png)
+
+![App Screenshot](/Images/3.png)
+
 ### b. Edit Profil Pengguna
 
 Edit semua profil pengguna:
@@ -22,6 +28,8 @@ Edit semua profil pengguna:
 /home/mahasiswa/.profile
 /home/mahasiswa/.bashrc
 ```
+
+![App Screenshot](/Images/4.png)
 
 Ganti /home/mahasiswa dengan nama Anda sendiri dan tambahkan pesan pada setiap file.
 
@@ -41,7 +49,9 @@ $ su - mahasiswa
 $ exit
 ```
 
-Perbedaan kedua utilitas tersebut adalah...
+![App Screenshot](/Images/5.png)
+
+Perbedaan kedua utilitas tersebut...
 
 ## 2. Prompt String (PS)
 
@@ -67,6 +77,8 @@ Saya=mahasiswa > PS1=”\w >”
 ~ > PS1=\h >”
 ```
 
+![App Screenshot](/Images/6.png)
+
 ## 3. Logout
 
 Edit file .bash_logout dan tambahkan pesan:
@@ -76,6 +88,10 @@ echo "Terima kasih atas sesi yang diberikan"
 sleep 5
 clear
 ```
+
+![App Screenshot](/Images/9.png)
+
+![App Screenshot](/Images/10.png)
 
 ## 4. Bash Script
 
@@ -89,6 +105,16 @@ p2.sh
 p3.sh
 ```
 
+![App Screenshot](/Images/nano%203%20buah%20script.png)
+
+![App Screenshot](/Images/11.png)
+
+![App Screenshot](/Images/12.png)
+
+![App Screenshot](/Images/12.png)
+
+![App Screenshot](/Images/14.png)
+
 ### b. Jalankan Script
 
 Jalankan script sebagai berikut:
@@ -99,6 +125,14 @@ $ ./p1.sh &
 $ ./p1.sh $ ./p2.sh & ./p3.sh &
 $ ( ./p1.sh ; ./p3.sh ) &
 ```
+
+![App Screenshot](/Images/15.png)
+
+![App Screenshot](/Images/16.png)
+
+![App Screenshot](/Images/17.png)
+
+![App Screenshot](/Images/18.png)
 
 ## 5. Jobs
 
@@ -111,9 +145,12 @@ Buat shell-script yang melakukan loop dengan nama pwaktu.sh:
 while [ true ]
 do
 date >> hasil
+echo "my name is zaki"
 sleep 10
 done
 ```
+
+![App Screenshot](/Images/pwaktu.png)
 
 ### b. Jalankan Sebagai Background
 
@@ -125,6 +162,8 @@ $ find / -print > files 2>/dev/null &
 $ jobs
 ```
 
+![App Screenshot](/Images/19.png)
+
 ### c. Ubah Program ke 1 Menjadi Foreground
 
 Ubah program ke 1 menjadi foreground:
@@ -134,6 +173,8 @@ $ fg %1
 $ bg
 ```
 
+![App Screenshot](/Images/20.png)
+
 ### d. Stop Program Background
 
 Hentikan program background dengan utilitas kill:
@@ -142,6 +183,10 @@ Hentikan program background dengan utilitas kill:
 $ ps x
 $ kill [Nomor PID]
 ```
+
+![App Screenshot](/Images/21.png)
+
+![App Screenshot](/Images/22.png)
 
 ## 6. History
 
@@ -154,6 +199,8 @@ $ HISTSIZE=20
 $ h
 ```
 
+![App Screenshot](/Images/23.png)
+
 ### b. Gunakan Fasilitas History
 
 Gunakan fasilitas history untuk mengedit instruksi dan ulangi instruksi pada history buffer:
@@ -162,6 +209,8 @@ Gunakan fasilitas history untuk mengedit instruksi dan ulangi instruksi pada his
 $ !-5
 ```
 
+![App Screenshot](/Images/24.png)
+
 ### c. Ulangi Instruksi yang Terakhir
 
 Gunakan perintah untuk mengulangi instruksi terakhir:
@@ -169,3 +218,27 @@ Gunakan perintah untuk mengulangi instruksi terakhir:
 ```bash
 $ !!
 ```
+
+![App Screenshot](/Images/25.png)
+
+### d. Ulangi Instruksi pada History Buffer Nomor 150
+
+Jalankan instruksi yang ada di history buffer dengan nomor 150:
+
+```bash
+$ !101
+```
+
+![App Screenshot](/Images/26.png)
+
+### e. Ulangi Instruksi dengan Prefix "ls"
+
+Ulangi instruksi yang memiliki prefix "ls":
+
+```bash
+$ ls
+```
+
+![App Screenshot](/Images/27.png)
+
+Dengan langkah-langkah di atas, Anda akan dapat memahami dan menguasai penggunaan job control serta konsep dasar sistem operasi dalam lingkungan Linux. Semoga berhasil!
