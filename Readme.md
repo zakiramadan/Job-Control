@@ -221,9 +221,9 @@ $ !!
 
 ![App Screenshot](/Images/25.png)
 
-### d. Ulangi Instruksi pada History Buffer Nomor 150
+### d. Ulangi Instruksi pada History Buffer Nomor (sebagai contoh: 101)
 
-Jalankan instruksi yang ada di history buffer dengan nomor 150:
+Jalankan instruksi yang ada di history buffer dengan nomor 101:
 
 ```bash
 $ !101
